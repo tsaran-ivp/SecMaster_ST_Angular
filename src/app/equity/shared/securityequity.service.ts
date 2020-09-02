@@ -16,7 +16,9 @@ export class SecurityequityService {
   selectequity():Observable<any[]>{
     return this.http.get<any>(this.Equityurl+'/equity');
   }
-  
+  selectactivity():Observable<any[]>{
+    return this.http.get<any>(this.Equityurl+'/equity/activity');
+  }
 
   updateequity(formdata:Securityequity){
     return this.http.put(this.Equityurl+'/equity',formdata);
