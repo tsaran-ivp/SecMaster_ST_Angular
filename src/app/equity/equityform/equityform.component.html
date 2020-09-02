@@ -22,33 +22,183 @@
                     <label>SecurityDescription</label>
                     <input type="text" name="SecurityDescription" #SecurityDescription="ngModel" [(ngModel)]="service.formdata.SecurityDescription" class="form-control" >   
                 </div>
+                <div class="col-3" hidden>
+                    <label>HasPosition</label>
+                    <input type="text" name="HasPosition" #HasPosition="ngModel" [(ngModel)]="service.formdata.HasPosition" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>ActiveSecurity</label>
+                    <input type="text" name="ActiveSecurity" #ActiveSecurity="ngModel" [(ngModel)]="service.formdata.ActiveSecurity" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>LotSize</label>
+                    <input type="number" name="LotSize" #LotSize="ngModel" [(ngModel)]="service.formdata.LotSize" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>BBGUniqueName</label>
+                    <input type="text" name="BBGUniqueName" #BBGUniqueName="ngModel" [(ngModel)]="service.formdata.BBGUniqueName" class="form-control" readonly="readonly" hidden>   
+                </div>
+
+                <div class="col-3" hidden>
+                    <label>CUSIP</label>
+                    <input type="text" name="CUSIP" #CUSIP="ngModel" [(ngModel)]="service.formdata.CUSIP" class="form-control" readonly="readonly" hidden>   
+                </div>
                 <div class="col-3">
                     <label>ISIN</label>
                     <input type="text" name="ISIN" #ISIN="ngModel" [(ngModel)]="service.formdata.ISIN" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3" hidden>
+                    <label>SEDOL</label>
+                    <input type="text" name="SEDOL" #SEDOL="ngModel" [(ngModel)]="service.formdata.SEDOL" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>BBGTicker</label>
+                    <input type="text" name="BBGTicker" #BBGTicker="ngModel" [(ngModel)]="service.formdata.BBGTicker" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>BBGUID</label>
+                    <input type="text" name="BBGUID" #BBGUID="ngModel" [(ngModel)]="service.formdata.BBGUID" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>BBGGlobalID</label>
+                    <input type="text" name="BBGGlobalID" #BBGGlobalID="ngModel" [(ngModel)]="service.formdata.BBGGlobalID" class="form-control" readonly="readonly" hidden>   
                 </div>
                 <div class="col-3">
                     <label>TickerAndExchange</label>
                     <input type="text" name="TickerAndExchange" #TickerAndExchange="ngModel" [(ngModel)]="service.formdata.TickerAndExchange" class="form-control" readonly="readonly">   
                 </div>
+
+                <div class="col-3" hidden>
+                    <label>ADRFlag</label>
+                    <input type="text" name="ADRFlag" #ADRFlag="ngModel" [(ngModel)]="service.formdata.ADRFlag" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>ADRUnderlyingTicker</label>
+                    <input type="text" name="ADRUnderlyingTicker" #ADRUnderlyingTicker="ngModel" [(ngModel)]="service.formdata.ADRUnderlyingTicker" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>ADRUnderlyingCurrency</label>
+                    <input type="text" name="ADRUnderlyingCurrency" #ADRUnderlyingCurrency="ngModel" [(ngModel)]="service.formdata.ADRUnderlyingCurrency" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3"hidden>
+                    <label>SharesPerADR</label>
+                    <input type="text" name="SharesPerADR" #SharesPerADR="ngModel" [(ngModel)]="service.formdata.SharesPerADR" class="form-control" readonly="readonly" hidden>   
+                </div>
                 <div class="col-3">
-                    <label>BBGTicker</label>
-                    <input type="text" name="BBGTicker" #BBGTicker="ngModel" [(ngModel)]="service.formdata.BBGTicker" class="form-control" readonly="readonly">   
+                    <label>IPODate</label>
+                    <input type="text" name="IPODate" #IPODate="ngModel" [(ngModel)]="service.formdata.IPODate" class="form-control" >   
                 </div>
                 <div class="col-3">
                     <label>PricingCurrency</label>
-                    <input type="text" name="PricingCurrency" #PricingCurrency="ngModel" [(ngModel)]="service.formdata.PricingCurrency" class="form-control" readonly="readonly">   
+                    <input type="text" name="PricingCurrency" #PricingCurrency="ngModel" [(ngModel)]="service.formdata.PricingCurrency" class="form-control" >   
+                </div>
+
+
+                <div class="col-3" hidden>
+                    <label>SettleDays</label>
+                    <input type="number" name="SettleDays" #SettleDays="ngModel" [(ngModel)]="service.formdata.SettleDays" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>OutstandingShares</label>
+                    <input type="number" name="OutstandingShares" #OutstandingShares="ngModel" [(ngModel)]="service.formdata.OutstandingShares" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>VotingRightsPerShare</label>
+                    <input type="number" name="VotingRightsPerShare" #VotingRightsPerShare="ngModel" [(ngModel)]="service.formdata.VotingRightsPerShare" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>AverageVolume</label>
+                    <input type="number" name="AverageVolume" #AverageVolume="ngModel" [(ngModel)]="service.formdata.AverageVolume" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>Beta</label>
+                    <input type="number" name="Beta" #Beta="ngModel" [(ngModel)]="service.formdata.Beta" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>ShortInterest</label>
+                    <input type="number" name="ShortInterest" #ShortInterest="ngModel" [(ngModel)]="service.formdata.ShortInterest" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>ReturnYTD</label>
+                    <input type="number" name="ReturnYTD" #ReturnYTD="ngModel" [(ngModel)]="service.formdata.ReturnYTD" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>Volatility</label>
+                    <input type="number" name="Volatility" #Volatility="ngModel" [(ngModel)]="service.formdata.Volatility" class="form-control" readonly="readonly" hidden>   
                 </div>
                 <div class="col-3">
                     <label>AssetClass</label>
                     <input type="text" name="AssetClass" #AssetClass="ngModel" [(ngModel)]="service.formdata.AssetClass" class="form-control" readonly="readonly">   
                 </div>
+
+
+
+                <div class="col-3" hidden>
+                    <label>PFCountry</label>
+                    <input type="text" name="PFCountry" #PFCountry="ngModel" [(ngModel)]="service.formdata.PFCountry" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFCreditRating</label>
+                    <input type="text" name="PFCreditRating" #PFCreditRating="ngModel" [(ngModel)]="service.formdata.PFCreditRating" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFCurrency</label>
+                    <input type="text" name="PFCurrency" #PFCurrency="ngModel" [(ngModel)]="service.formdata.PFCurrency" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFInstrument</label>
+                    <input type="text" name="PFInstrument" #PFInstrument="ngModel" [(ngModel)]="service.formdata.PFInstrument" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFLiquidityProfile</label>
+                    <input type="text" name="PFLiquidityProfile" #PFLiquidityProfile="ngModel" [(ngModel)]="service.formdata.PFLiquidityProfile" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" >
+                    <label>PFMaturity</label>
+                    <input type="text" name="PFMaturity" #PFMaturity="ngModel" [(ngModel)]="service.formdata.PFMaturity" class="form-control" readonly="readonly" >   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFNAICSCode</label>
+                    <input type="text" name="PFNAICSCode" #PFNAICSCode="ngModel" [(ngModel)]="service.formdata.PFNAICSCode" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFRegion</label>
+                    <input type="text" name="PFRegion" #PFRegion="ngModel" [(ngModel)]="service.formdata.PFRegion" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3"  hidden>
+                    <label>PFSector</label>
+                    <input type="text" name="PFSector" #PFSector="ngModel" [(ngModel)]="service.formdata.PFSector" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>PFSubAssetClass</label>
+                    <input type="text" name="PFSubAssetClass" #PFSubAssetClass="ngModel" [(ngModel)]="service.formdata.PFSubAssetClass" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>CountryOfIssuance</label>
+                    <input type="text" name="CountryOfIssuance" #CountryOfIssuance="ngModel" [(ngModel)]="service.formdata.CountryOfIssuance" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3">
+                    <label>Exchange</label>
+                    <input type="text" name="Exchange" #Exchange="ngModel" [(ngModel)]="service.formdata.Exchange" class="form-control" >   
+                </div>
+             
+
+
                 <div class="col-3">
                     <label>IssuerName</label>
-                    <input type="text" name="IssuerName" #IssuerName="ngModel" [(ngModel)]="service.formdata.IssuerName" class="form-control" readonly="readonly">   
+                    <input type="text" name="IssuerName" #IssuerName="ngModel" [(ngModel)]="service.formdata.IssuerName" class="form-control" >   
+                </div>
+                <div class="col-3">
+                    <label>IssueCurrency</label>
+                    <input type="text" name="IssueCurrency" #IssueCurrency="ngModel" [(ngModel)]="service.formdata.IssueCurrency" class="form-control">   
                 </div>
                 <div class="col-3">
                     <label>TradingCurrency</label>
-                    <input type="text" name="TradingCurrency" #TradingCurrency="ngModel" [(ngModel)]="service.formdata.TradingCurrency" class="form-control" readonly="readonly">   
+                    <input type="text" name="TradingCurrency" #TradingCurrency="ngModel" [(ngModel)]="service.formdata.TradingCurrency" class="form-control" >   
+                </div>
+                <div class="col-3">
+                    <label>BBGIndustrySubGroup</label>
+                    <input type="text" name="BBGIndustrySubGroup" #BBGIndustrySubGroup="ngModel" [(ngModel)]="service.formdata.BBGIndustrySubGroup" class="form-control" readonly="readonly" >   
                 </div>
                 <div class="col-3">
                     <label>BBGIndustryGroup</label>
@@ -57,6 +207,72 @@
                 <div class="col-3">
                     <label>BBGSector</label>
                     <input type="text" name="BBGSector" #BBGSector="ngModel" [(ngModel)]="service.formdata.BBGSector" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3" hidden>
+                    <label>CountryOfIncorporation</label>
+                    <input type="text" name="CountryOfIncorporation" #CountryOfIncorporation="ngModel" [(ngModel)]="service.formdata.CountryOfIncorporation" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3" hidden>
+                    <label>RiskCurrency</label>
+                    <input type="text" name="RiskCurrency" #RiskCurrency="ngModel" [(ngModel)]="service.formdata.RiskCurrency" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3">
+                    <label>OpenPrice</label>
+                    <input type="number" name="OpenPrice" #OpenPrice="ngModel" [(ngModel)]="service.formdata.OpenPrice" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>ClosePrice</label>
+                    <input type="number" name="ClosePrice" #ClosePrice="ngModel" [(ngModel)]="service.formdata.ClosePrice" class="form-control" >   
+                </div>
+                <div class="col-3" hidden>
+                    <label>Volume</label>
+                    <input type="number" name="Volume" #Volume="ngModel" [(ngModel)]="service.formdata.Volume" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3">
+                    <label>LastPrice</label>
+                    <input type="number" name="LastPrice" #LastPrice="ngModel" [(ngModel)]="service.formdata.LastPrice" class="form-control" >   
+                </div>
+                <div class="col-3">
+                    <label>AskPrice</label>
+                    <input type="number" name="AskPrice" #AskPrice="ngModel" [(ngModel)]="service.formdata.AskPrice" class="form-control" >   
+                </div>
+                <div class="col-3" hidden>
+                    <label>BidPrice</label>
+                    <input type="number" name="BidPrice" #BidPrice="ngModel" [(ngModel)]="service.formdata.BidPrice" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3">
+                    <label>PERatio</label>
+                    <input type="number" name="PERatio" #PERatio="ngModel" [(ngModel)]="service.formdata.PERatio" class="form-control" >   
+                </div>
+
+
+                <div class="col-3">
+                    <label>DividendDeclareDate</label>
+                    <input type="text" name="DividendDeclareDate" #DividendDeclareDate="ngModel" [(ngModel)]="service.formdata.DividendDeclareDate" class="form-control" readonly="readonly" >   
+                </div>
+                <div class="col-3">
+                    <label>DividendExDate</label>
+                    <input type="text" name="DividendExDate" #DividendExDate="ngModel" [(ngModel)]="service.formdata.DividendExDate" class="form-control"  >   
+                </div>
+                <div class="col-3" hidden>
+                    <label>DividendRecordDate</label>
+                    <input type="text" name="DividendRecordDate" #DividendRecordDate="ngModel" [(ngModel)]="service.formdata.DividendRecordDate" class="form-control" readonly="readonly" hidden>   
+                </div>
+                <div class="col-3">
+                    <label>DividendPayDate</label>
+                    <input type="text" name="DividendPayDate" #DividendPayDate="ngModel" [(ngModel)]="service.formdata.DividendPayDate" class="form-control"  >   
+                </div>
+                <div class="col-3">
+                    <label>DividendAmount</label>
+                    <input type="number" name="DividendAmount" #DividendAmount="ngModel" [(ngModel)]="service.formdata.DividendAmount" class="form-control" readonly="readonly" >   
+                </div>
+                <div class="col-3">
+                    <label hidden>Frequency</label>
+                    <input type="text" name="Frequency" #Frequency="ngModel" [(ngModel)]="service.formdata.Frequency" class="form-control" >   
+                </div>
+                <div class="col-3">
+                    <label>DividendType</label>
+                    <input type="text" name="DividendType" #DividendType="ngModel" [(ngModel)]="service.formdata.DividendType" class="form-control" readonly="readonly" >   
                 </div>
 
             </div>
